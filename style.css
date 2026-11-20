@@ -12,7 +12,7 @@ body {
     align-items: center;
     padding: 20px 10px;
     font-family: 'Courier New', monospace;
-    background: linear-gradient(135deg, #ffe0eb, #ffc2d5);
+    background: linear-gradient(135deg, #eee0ff, #d8baff, #c9a0ff);
     overflow-x: hidden;
 }
 
@@ -21,10 +21,10 @@ body {
 .window {
     width: 850px;
     max-width: 95%;
-    background: #f9c5d5;
-    border: 5px solid #d87988;
+    background: #dfc5fa;
+    border: 5px solid #9864c9;
     border-radius: 18px;
-    box-shadow: 0 10px 25px #b85e7580;
+    box-shadow: 0 10px 25px #7542a580;
     position: relative;
     z-index: 2;
     overflow: hidden;
@@ -33,12 +33,12 @@ body {
 /* TITLE BAR */
 
 .title-bar {
-    background: #eaa1b6;
+    background: #c49ae9;
     padding: 12px;
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    color: #7d354a;
+    color: #542b78;
 }
 
 .window-buttons {
@@ -47,8 +47,8 @@ body {
 }
 
 .window-buttons span {
-    background: #fff0f3;
-    border: 1px solid #b95c70;
+    background: #f5edff;
+    border: 1px solid #9864c9;
     padding: 2px 6px;
 }
 
@@ -57,9 +57,9 @@ body {
 .menu {
     text-align: center;
     padding: 12px;
-    background: #fce1e9;
-    color: #d94c6a;
-    border-bottom: 3px solid #e69aad;
+    background: #eee0ff;
+    color: #8751b5;
+    border-bottom: 3px solid #b58add;
 }
 
 /* CONTENT */
@@ -68,7 +68,7 @@ body {
     text-align: center;
     padding: 25px 15px;
     min-height: 350px;
-    background-color: #f8c9d7;
+    background-color: #e4cff9;
     background-image:
         linear-gradient(90deg, #ffffff40 50%, transparent 50%),
         linear-gradient(#ffffff40 50%, transparent 50%);
@@ -79,12 +79,12 @@ body {
 
 h2 {
     font-size: 19px;
-    color: #783348;
+    color: #542b78;
     margin-bottom: 10px;
 }
 
 .content p {
-    color: #873b51;
+    color: #68418a;
     margin-bottom: 15px;
     font-weight: bold;
 }
@@ -161,9 +161,9 @@ h2 {
 
 button {
     padding: 10px 22px;
-    border: 3px solid #c96d7d;
-    background: #fff0f2;
-    color: #9e4055;
+    border: 3px solid #9864c9;
+    background: #f5edff;
+    color: #63368c;
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
@@ -172,21 +172,21 @@ button {
 }
 
 button:hover {
-    background: #f49bb3;
+    background: #c49ae9;
     transform: scale(1.08);
 }
 
 #message {
     margin-top: 20px;
     font-size: 14px;
-    color: #b72d54;
+    color: #7841a8;
 }
 
 /* FLOATING HEARTS */
 
 .heart {
     position: fixed;
-    color: #e65c7c;
+    color: #a66be0;
     animation: fall 5s linear infinite;
     z-index: 1;
     pointer-events: none;
@@ -217,23 +217,21 @@ button:hover {
 /* LEFT SIDE */
 
 .surprise-left {
-    background: #fce1e9;
+    background: #f0e3ff;
     border-radius: 15px;
-    border: 2px solid #f4b4c7;
+    border: 2px solid #c49ae9;
     min-height: 300px;
     padding: 20px 10px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     overflow: hidden;
     position: relative;
 }
 
 .surprise-left h3 {
-    color: #c34e70;
+    color: #8751b5;
     font-size: 18px;
     margin-bottom: 15px;
 }
@@ -260,11 +258,11 @@ button:hover {
 .piggy span {
     font-size: 75px;
     display: inline-block;
-    filter: drop-shadow(0 5px 3px #d8798860);
+    filter: drop-shadow(0 5px 3px #9864c960);
 }
 
 .piggy small {
-    color: #c34e70;
+    color: #8751b5;
     font-weight: bold;
     margin-top: 5px;
 }
@@ -276,7 +274,7 @@ button:hover {
 }
 
 .surprise-left p {
-    color: #963e59;
+    color: #68418a;
     font-size: 13px;
     margin-top: 10px;
 }
@@ -284,12 +282,11 @@ button:hover {
 /* RIGHT SIDE */
 
 .surprise-right {
-    background: #f8d1df;
+    background: #e9d7fc;
     border-radius: 15px;
-    border: 2px solid #f4b4c7;
+    border: 2px solid #c49ae9;
     padding: 22px;
     text-align: left;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -297,12 +294,12 @@ button:hover {
 
 .surprise-right h2 {
     font-size: 23px;
-    color: #a94362;
+    color: #7542a5;
     margin-bottom: 12px;
 }
 
 .surprise-right p {
-    color: #873b51;
+    color: #68418a;
     line-height: 1.8;
     font-size: 13px;
     white-space: pre-line;
@@ -310,13 +307,13 @@ button:hover {
 }
 
 .surprise-right h3 {
-    color: #c34e70;
+    color: #8751b5;
     margin-top: 15px;
     font-size: 16px;
 }
 
 .love-footer {
-    color: #c34e70;
+    color: #8751b5;
     font-size: 10px;
     font-weight: bold;
     text-align: center;
